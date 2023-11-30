@@ -17,6 +17,7 @@ formulário.on('submit', function(e){
 function addLinhas() {
     if (arrayTarefas.includes(nomeDaTarefa.val())) {
         alert(`Essa tarefa já foi inserida meu querido.\nDigite outra tarefa!`);
+        nomeDaTarefa.val('');
     } else {
         arrayTarefas.push(nomeDaTarefa.val());
 
@@ -31,6 +32,7 @@ function addLinhas() {
         `;
 
         linhas += linha;
+        nomeDaTarefa.val('');
     }
 }
 
